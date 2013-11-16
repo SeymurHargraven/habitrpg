@@ -69,6 +69,17 @@ script(id='partials/options.profile.avatar.html', type='text/ng-template')
               button.customize-option(type='button', class='{{user.preferences.gender}}_skin_shadow',   ng-if='user.purchased.skin.shadow', ng-click='unlock("skin.shadow")')
 
 script(id='partials/options.profile.stats.html', type='text/ng-template')
+  .well
+    h4 Class
+    a.btn.btn-danger(ng-click='set("stats.class",false)') Re-roll
+    ul.unstyled
+      li
+        span(popover-title='Attack', popover='Attack increases damage you inflict to tasks, both with magic or phsyical abilities', popover-trigger='mouseenter') ATK: {{user.stats.atk}}
+        a.btn.btn-primary(ng-click='') +
+      li(popover-title='Constitution', popover='Attack decreases damage inflicted by tasks, and increases the effectiveness of healing and buff spells', popover-trigger='mouseenter') CON: {{user.stats.con}}
+      li(popover-title='Luck', popover='Luck increases the likelyhood of drops, Gold bonuses, and critical hit chances', popover-trigger='mouseenter') LUC: {{user.stats.luc}}
+      li(popover-title='Intelligence', popover='Intelligence increases your overall mana, allowing you to cast more spells', popover-trigger='mouseenter') INT: {{user.stats.int}}
+
   .row-fluid
     .span6.border-right
       include ../shared/profiles/stats

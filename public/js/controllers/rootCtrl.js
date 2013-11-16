@@ -3,8 +3,8 @@
 /* Make user and settings available for everyone through root scope.
  */
 
-habitrpg.controller("RootCtrl", ['$scope', '$rootScope', '$location', 'User', '$http', '$state', '$stateParams',
-  function($scope, $rootScope, $location, User, $http, $state, $stateParams) {
+habitrpg.controller("RootCtrl", ['$scope', '$rootScope', '$location', 'User', '$http', '$state', '$stateParams', 'Notification',
+  function($scope, $rootScope, $location, User, $http, $state, $stateParams, Notification) {
     $rootScope.modals = {};
     $rootScope.modals.achievements = {};
     $rootScope.User = User;
@@ -121,5 +121,23 @@ habitrpg.controller("RootCtrl", ['$scope', '$rootScope', '$location', 'User', '$
       chart = new google.visualization.LineChart($("." + id + "-chart")[0]);
       chart.draw(data, options);
     };
+
+    /*
+     ------------------------
+     Spells
+     ------------------------
+    */
+    $scope.castStart = function(spell) {
+      $rootScope.applyingAction = true;
+      $scope.spell = spell;
+    }
+
+    $scope.castEnd = function(obj, $event){
+      Notification.text('You cast a spell!');
+      // Determine if obj is user or task
+      $rootScope.applyingAction = false;
+      $scope.spell = null;
+      $event.stopPropagation()();
+    }
   }
 ]);

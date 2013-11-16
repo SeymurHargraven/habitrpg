@@ -1,4 +1,4 @@
-li(ng-repeat='task in obj[list.type+"s"]', class='task {{taskClasses(task, user.filters, user.preferences.dayStart, user.lastCron, list.showCompleted, main)}}', data-id='{{task.id}}')
+li(ng-repeat='task in obj[list.type+"s"]', class='task {{taskClasses(task, user.filters, user.preferences.dayStart, user.lastCron, list.showCompleted, main)}}', ng-click='spell && castEnd(task, $event)', ng-class='{"cast-target":spell}')
   // right-hand side control buttons
   .task-meta-controls
 

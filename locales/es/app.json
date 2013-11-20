@@ -3,7 +3,7 @@
   
 
 "_commentfrontpage":"HABITRPG PORTADA",
-   "synopsis" : "Un programa para construir hábitos que convierte tu vida en un Juego de Rol. Aumenta de nivel a medida que triunfas, pierde HP al fracasar, gana dinero para comprar armas y armaduras.",
+   "synopsis" : "Un programa para construir hábitos que convierte tu vida en un Juego de Rol. Aumenta de nivel a medida que triunfas, pierdes HP al fracasar, y ganas dinero para comprar armas y armaduras.",
   "playButton" : "Jugar",
 
 
@@ -44,7 +44,7 @@
     "todo1comment" : "-- Quehaceres: Completa en Algún Momento -- Los Quehaceres no cumplidos no te harán daño, pero se volverán más valiosos con el tiempo. Esto te alentará a completar los Quehaceres obsoletos.",
   "reward1" : "1 Episodio de Game of Thrones",
     "reward1comment": "-- Premios: Hazte Un Obsequio! -- Al completar objetivos, ganas dinero para comprar premios. Cómpralos generosamente - las recompensas son fundamentales para formar buenos hábitos.",
-  "reward2" : "Torta",
+  "reward2" : "Pastel",
     "reward2comment" : "Pero sólo compra si tienes suficiente oro - de lo contrario perderás PV.",
 
 "_commentdefaulttags" : "ETIQUETA DE DEFECTO",
@@ -52,7 +52,7 @@
   "afternoon" : "tarde",
   "evening" : "noche",
 
-"_commenthead": "ENCABEZAMIENTO",
+"_commenthead": "ENCABEZADO",
   "health": "Vida",
   "experience": "Experiencia",
     "history": "Historial",
@@ -114,24 +114,24 @@
     "clearFilters" : "Eliminar Filtros",
 
 
-"_commentdrops" : "SYSTEMA DE DROPS",
+"_commentdrops" : "SISTEMA DE DROPS",
   "dropsEnabled" : "¡Drops Habilitados!",
-    "dropsEnabledText1" : "¡Has activado el Sistema de drops! Ahora cuando completas tareas, tienes una pequeña azar de encontrar un ítem. Y adivina qué, has encontrado un",
+    "dropsEnabledText1" : "¡Has activado el Sistema de drops! Ahora cuando completas tareas, tienes una pequeña oportunidad de encontrar un ítem. Y adivina qué, has encontrado un",
     "dropsEnabledText2" : "huevo",
   "itemDropped" : "Ha caído un ítem",
 
 
 
-"_commentoptionsview": "OPTIONS VIEW",
+"_commentoptionsview": "VISTA DE OPCIONES",
   "profile": "Perfil",
     "avatar": "Avatar",
 
       "head": "Cabeza",
-        "showHelm": "Mostrar Yelmo",
+        "showHelm": "Mostrar Casco",
       "hair": "Cabello",
       "skin": "Piel",
       "clothing" : "Ropa",
-      "photoUrl": "Url de la Imagen",
+      "photoUrl": "URL de la Imagen",
       "fullName": "Nombre Completo",
       "blurb": "Descripción",
       "websites": "Sitios Web",
@@ -191,7 +191,7 @@
     "contribName" : "Colaborador",
       "contribText" : "Ha contribuido a HabitRPG (código, diseño, pixel art, asesoría legal, docs, etc). ¿Quieres esta insignia? Corrige un error",
     "kickstartName1" : "Patrocinador en Kickstarter - ",
-    "kickstartName2" : "Tier",
+    "kickstartName2" : "Nivel",
       "kickstartText" : "Apoyó el proyecto en Kickstarter",
     "streakName" : " Logro(s) en Cadena",
       "streakText1" : "Ha completado ",
